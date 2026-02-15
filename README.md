@@ -74,12 +74,12 @@ This reflects **accurate schema mapping**, not database recreation.
 
 ## 📸 Screenshots
 
-('/static/img/hero.png')
+![Home Page]('static/img/hero.png')
 
-('../static/img/cafes.png')
+![Cafes Listings]('../static/img/cafes.png')
 
-('../static/img/cafe_view.png')
+![view]('../static/img/cafe_view.png')
 
-('../static/img/add.png')
+![Add Page]('../static/img/add.png')
 
 # Cafe-and-WiFi-App
