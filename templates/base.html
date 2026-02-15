@@ -16,7 +16,7 @@
 <body>
   {% block navbar %}
   <nav>
-    <div class="logo">Cafes And WiFi</div>
+    <div class="logo" href="{{ url_for('home') }}">Cafes And WiFi</div>
     <ul class="nav-links">
       <li><a class="home" href="{{ url_for('home')}}">Home</a></li>
       <li><a href="{{ url_for('cafe') }}">View Cafes</a></li>
