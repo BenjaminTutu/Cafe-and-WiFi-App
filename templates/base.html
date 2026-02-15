@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% block styles %}
+
+  {{ bootstrap.load_css() }}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+  {% endblock %}
+
+  <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body>
+  {% block navbar %}
+  <nav>
+    <div class="logo">Cafes And WiFi</div>
+    <ul class="nav-links">
+      <li><a class="home" href="{{ url_for('home')}}">Home</a></li>
+      <li><a href="{{ url_for('cafe') }}">View Cafes</a></li>
+    </ul>
+    <div class="btns">
+      <button class="btn"><a href="{{ url_for('add') }}">Add Cafe</a></button>
+    </div>
+  </nav>
+  {% endblock %}
+
+  {% block content %}{% endblock %}
+</body>
+
+</html>

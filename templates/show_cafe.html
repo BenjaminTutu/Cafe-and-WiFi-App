@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Cafe Details{% endblock %}
+
+{% block content %}
+<div class="cafe-details" style="max-width: 600px; margin: 0 auto; 
+display: flex; flex-direction: column; align-items: center;      
+padding: 20px; background-color: #f9f9f9; 
+border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+    <h1>{{ cafe.name }}</h1>
+    <img src="{{ cafe.img_url }}" alt="{{ cafe.name }}" class="cafe-image">
+    <p><strong>Location:</strong> {{ cafe.location }}</p>
+    <p><strong>Seats:</strong> {{ cafe.seats }}</p>
+    <p><strong>Coffee Price:</strong> {{ cafe.coffee_price }}</p>
+    <p><strong>Can Take Calls:</strong> {{ 'Yes' if cafe.can_take_calls else 'No' }}</p>
+    <p><strong>Has Sockets:</strong> {{ 'Yes' if cafe.has_sockets else 'No' }}</p>
+    <p><strong>Has Toilet:</strong> {{ 'Yes' if cafe.has_toilet else 'No' }}</p>
+    <p><strong>Has WiFi:</strong> {{ 'Yes' if cafe.has_wifi else 'No' }}</p>
+    <a href="{{ cafe.map_url }}" class="btn btn-primary">View on Map</a>
+</div>
+{%endblock %}
