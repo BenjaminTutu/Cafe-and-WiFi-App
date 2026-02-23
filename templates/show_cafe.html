@@ -16,6 +16,6 @@ border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
     <p><strong>Has Sockets:</strong> {{ 'Yes' if cafe.has_sockets else 'No' }}</p>
     <p><strong>Has Toilet:</strong> {{ 'Yes' if cafe.has_toilet else 'No' }}</p>
     <p><strong>Has WiFi:</strong> {{ 'Yes' if cafe.has_wifi else 'No' }}</p>
-    <a href="{{ cafe.map_url }}" class="btn btn-primary">View on Map</a>
+    <a href="{{ cafe.map_url }}" target="_blank" class="btn btn-primary">View on Map</a>
 </div>
 {%endblock %}
